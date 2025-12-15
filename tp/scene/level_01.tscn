@@ -11,7 +11,7 @@
 [node name="pièce" parent="pièces" index="0" groups=["player"]]
 
 [node name="porte" parent="." index="6"]
-position = Vector2(249, 505)
+position = Vector2(887, 234)
 
 [node name="AffichageCompteur" type="CanvasLayer" parent="." index="7"]
 script = ExtResource("3_1pjjk")

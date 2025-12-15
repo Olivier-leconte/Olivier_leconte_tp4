@@ -81,7 +81,6 @@ func animation(direction):
 
 
 func _on_porte_body_entered(_body: Node2D) -> void:
-	print('Player dans la porte, changement de scène...')
 
 	get_tree().call_deferred("change_scene_to_file", "res://scene/niveau_02.tscn")
 	pass

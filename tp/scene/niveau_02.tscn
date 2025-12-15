@@ -2204,7 +2204,7 @@ tile_set = SubResource("TileSet_oaxnc")
 position = Vector2(336, 874)
 
 [node name="porte" type="Area2D" parent="."]
-position = Vector2(363, 582)
+position = Vector2(880, 296)
 script = ExtResource("18_j6s1k")
 nouvelle_scene = ExtResource("19_oaxnc")
 
