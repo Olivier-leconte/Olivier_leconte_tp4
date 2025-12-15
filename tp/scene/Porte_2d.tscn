@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2v7t3k8lule3"]
+
+[ext_resource type="Texture2D" uid="uid://c2u302hy60inh" path="res://doors.png" id="1_nae5b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtv04"]
+atlas = ExtResource("1_nae5b")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vx54p"]
+atlas = ExtResource("1_nae5b")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k7k5u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtv04")
+}],
+"loop": true,
+"name": &"Ouverte",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vx54p")
+}],
+"loop": true,
+"name": &"fermé",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(87, 72)
+sprite_frames = SubResource("SpriteFrames_k7k5u")
+animation = &"Ouverte"

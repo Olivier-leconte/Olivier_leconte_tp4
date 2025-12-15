@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[node name="AffichageCompteur" type="CanvasLayer"]
+
+[node name="compteur" type="Label" parent="."]
+texture_filter = 1
+offset_left = 1158.0
+offset_top = 14.0
+offset_right = 1175.0
+offset_bottom = 56.0
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="points" type="Label" parent="."]
+texture_filter = 1
+offset_left = 1162.0
+offset_top = 1.0
+offset_right = 1202.0
+offset_bottom = 24.0
+text = "0"

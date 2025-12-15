@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsic865uodcmy"]
+
+[ext_resource type="Script" uid="uid://fl7ijpxeu7ox" path="res://script/ecran_titre.gd" id="1_y5r8v"]
+[ext_resource type="Texture2D" uid="uid://clv6ucbs7kuwl" path="res://background_image.jpg" id="2_v7una"]
+
+[node name="ecran_titre" type="CanvasLayer"]
+script = ExtResource("1_y5r8v")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(684.5, 366.49997)
+scale = Vector2(1.8986111, 2.036111)
+texture = ExtResource("2_v7una")
+
+[node name="Commencer" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.0
+offset_top = -15.5
+offset_right = 51.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 45
+text = "Commencer"
+
+[node name="Quitter" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = 68.0
+offset_right = 134.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 45
+text = "	Quitter"
+
+[connection signal="pressed" from="Commencer" to="." method="_on_commencer_pressed"]
+[connection signal="pressed" from="Quitter" to="." method="_on_quitter_pressed"]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://clahhbb1q81yq"]
+
+[ext_resource type="AudioStream" uid="uid://crwpbm1cs1pgi" path="res://To Travel for Aureole.mp3" id="1_tph0v"]
+[ext_resource type="Script" uid="uid://cxdov886mthsi" path="res://script/music_manager.gd" id="2_3fmjx"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_tph0v")
+volume_db = -9.286
+autoplay = true
+script = ExtResource("2_3fmjx")

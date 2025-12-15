@@ -1,0 +1,69 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1ihjxk7wdqog"]
+
+[ext_resource type="Script" uid="uid://cmamp3mgyeedn" path="res://script/pause.gd" id="2_kee8w"]
+
+[node name="ui" type="CanvasLayer"]
+
+[node name="pause" type="Node" parent="."]
+script = ExtResource("2_kee8w")
+
+[node name="Panel_pause" type="Panel" parent="pause"]
+unique_name_in_owner = true
+auto_translate_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -132.0
+offset_top = 3.0
+offset_right = 34.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="pause/Panel_pause"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = -71.0
+offset_right = 153.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 52
+text = "PAUSE"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="pause/Panel_pause"]
+auto_translate_mode = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.517
+anchor_top = 0.646
+anchor_right = 0.517
+anchor_bottom = 0.646
+offset_left = -185.406
+offset_top = -99.66
+offset_right = 186.594
+offset_bottom = 99.34
+theme_override_constants/separation = 7
+
+[node name="Continuer" type="Button" parent="pause/Panel_pause/VBoxContainer"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "CONTINUER"
+
+[node name="Recommencer" type="Button" parent="pause/Panel_pause/VBoxContainer"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Recommencer"
+
+[connection signal="pressed" from="pause/Panel_pause/VBoxContainer/Continuer" to="pause" method="_on_continuer_pressed"]
+[connection signal="pressed" from="pause/Panel_pause/VBoxContainer/Recommencer" to="pause" method="_on_quitter_pressed"]

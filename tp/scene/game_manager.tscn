@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhp6k04hefjqd"]
+
+[ext_resource type="Script" uid="uid://ck4b4t47mkufm" path="res://script/GameManager.gd" id="1_3c3go"]
+[ext_resource type="PackedScene" path="res://scene/AffichageCompteur.tscn" id="2_3c3go"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_3c3go")
+
+[node name="AffichageCompteur" parent="." instance=ExtResource("2_3c3go")]
+visible = false

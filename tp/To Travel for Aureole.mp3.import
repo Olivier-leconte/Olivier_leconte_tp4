@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crwpbm1cs1pgi"
+path="res://.godot/imported/To Travel for Aureole.mp3-93da897d73dc31ad5ed09abff65fc446.mp3str"
+
+[deps]
+
+source_file="res://To Travel for Aureole.mp3"
+dest_files=["res://.godot/imported/To Travel for Aureole.mp3-93da897d73dc31ad5ed09abff65fc446.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
