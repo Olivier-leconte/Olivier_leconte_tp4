@@ -43,4 +43,11 @@ walking_sfx: le song que fait le personnage quand il marche dans la map.
  https://anokolisa.itch.io/basic-140-tiles-grassland-and-mines
  https://pixelfrog-assets.itch.io/pixel-adventure-1
  https://shadow-ms7.itch.io/heart-bar
+ https://silvdragoon-d.itch.io/cave-tileset
+ https://szadiart.itch.io/pixel-dark-forest
+ https://omniclause.itch.io/spikes
+
+ #### Voici le lien vers itch.io 
+ https://olivier-leconte.itch.io/knight-of-the-montain
+ 
  
