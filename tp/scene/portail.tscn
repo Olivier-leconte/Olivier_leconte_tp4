@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=3 uid="uid://j6h20qicexg8"]
+
+[ext_resource type="Texture2D" uid="uid://b7xewuriigo8q" path="res://Dimensional_Portal.png" id="1_mmq45"]
+[ext_resource type="Script" uid="uid://3lf6ye4p7mb7" path="res://script/portail.gd" id="1_vrbkb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrbkb"]
+atlas = ExtResource("1_mmq45")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uiv1"]
+atlas = ExtResource("1_mmq45")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clrfi"]
+atlas = ExtResource("1_mmq45")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttftw"]
+atlas = ExtResource("1_mmq45")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2u7p"]
+atlas = ExtResource("1_mmq45")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wug5w"]
+atlas = ExtResource("1_mmq45")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qph64"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrbkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uiv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_clrfi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttftw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2u7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wug5w")
+}],
+"loop": true,
+"name": &"portail",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmq45"]
+size = Vector2(22, 41)
+
+[node name="portail" type="Area2D"]
+texture_filter = 1
+script = ExtResource("1_vrbkb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(56.5, 85)
+scale = Vector2(1.21875, 1.25)
+sprite_frames = SubResource("SpriteFrames_qph64")
+animation = &"portail"
+autoplay = "portail"
+frame_progress = 0.72233194
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(58, 85.5)
+shape = SubResource("RectangleShape2D_mmq45")
+
+[node name="teleportation" type="Marker2D" parent="."]
+position = Vector2(75, 84)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

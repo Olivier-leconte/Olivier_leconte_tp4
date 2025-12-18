@@ -1,5 +1,6 @@
-[gd_scene load_steps=28 format=4 uid="uid://b8ppnw68e4wmf"]
+[gd_scene load_steps=29 format=4 uid="uid://b8ppnw68e4wmf"]
 
+[ext_resource type="Script" uid="uid://chajrnrjkffhh" path="res://scene/niveau_title_map.gd" id="1_dfb04"]
 [ext_resource type="Texture2D" uid="uid://cjgdq3pf61v4g" path="res://free-swamp-game-tileset-pixel-art/2 Background/Background.png" id="1_iawcq"]
 [ext_resource type="PackedScene" uid="uid://cvnfr1lvgahw4" path="res://scene/player.tscn" id="1_mbo2y"]
 [ext_resource type="PackedScene" uid="uid://dhp6k04hefjqd" path="res://scene/game_manager.tscn" id="2_uybw4"]
@@ -84,6 +85,7 @@ size = Vector2(22, 9)
 size = Vector2(15.5, 23)
 
 [node name="Level_01" type="Node"]
+script = ExtResource("1_dfb04")
 
 [node name="Background" type="Sprite2D" parent="."]
 auto_translate_mode = 1

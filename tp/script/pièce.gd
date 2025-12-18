@@ -1,6 +1,6 @@
 extends AnimatedSprite2D
 
-@onready var pièce_sfx: AudioStreamPlayer = get_node_or_null("../pièce_sfx")
+@onready var pièce_sfx: AudioStreamPlayer = get_node_or_null("pièce_sound.mp3")
 
 func _ready() -> void:
 	pass

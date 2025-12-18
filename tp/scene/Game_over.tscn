@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3ict3x5jfusf"]
+
+[ext_resource type="Script" uid="uid://c3qhuc6ppjnam" path="res://script/game_over.gd" id="1_63c46"]
+[ext_resource type="Texture2D" uid="uid://dbqlitrlf3geg" path="res://black_screen.jpg" id="1_fjbaj"]
+
+[node name="Game_over" type="CanvasLayer"]
+script = ExtResource("1_63c46")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(974.25006, 610.0001)
+scale = Vector2(1.3892066, 1.6575344)
+texture = ExtResource("1_fjbaj")
+
+[node name="Ressayer" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -15.5
+offset_right = 39.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Ressayer"
+
+[node name="Quitter" type="Button" parent="Ressayer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.0
+offset_top = 58.0
+offset_right = 71.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "	Quitter"
+
+[connection signal="pressed" from="Ressayer" to="." method="_on_ressayer_pressed"]
